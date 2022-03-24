@@ -6,7 +6,8 @@
   "author": "Johannes Krabbe <Johannes.Krabbe@GoKrabbe.de>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev src/index.ts"
+    "dev": "ts-node-dev src/index.ts",
+    "start": "ts-node src/index.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.13",

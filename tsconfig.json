@@ -14,5 +14,5 @@
       "*": ["node_modules/*"]
     }
   },
-  "include": ["server/src/**/*", "client/pages/**/*", "client/components/**/*"]
+  "include": ["src/**/*"]
 }

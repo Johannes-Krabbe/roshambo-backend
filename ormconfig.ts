@@ -8,6 +8,4 @@ export default {
   database: process.env.DB_DATABASE_NAME,
   port: process.env.DB_PORT,
   entities: ["src/entity/**/*.ts"],
-  ssl: true, 
-  rejectUnauthorized: false
 };

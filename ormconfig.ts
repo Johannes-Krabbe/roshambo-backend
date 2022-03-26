@@ -1,4 +1,4 @@
-export default {
+const local = {
   type: "postgres",
   synchronize: true,
   logging: false, // process.env.NODE_ENV !== 'production',
@@ -10,3 +10,15 @@ export default {
   entities: ["src/entity/**/*.ts"],
   ssl: { rejectUnauthorized: false }
 };
+
+const production = {
+  type: "postgres",
+  synchronize: true,
+  logging: false, // process.env.NODE_ENV !== 'production',
+  url: process.env.DATABASE_URL,
+  entities: ["src/entity/**/*.ts"],
+  ssl: { rejectUnauthorized: false }
+};
+
+
+export default (process.env.ENV === "production"? production:local)
